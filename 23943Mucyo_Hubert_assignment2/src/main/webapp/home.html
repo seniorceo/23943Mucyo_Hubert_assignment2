@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="animated-text">Welcome to My Home Page</h1>
+        <div class="wrapper">
+            <form action="sendmail" method="post" enctype="multipart/form-data">
+                <header>Upload Passport Pictures and Diploma</header>
+                <input type="file" name="passport_picture" accept=".jpg, .png" required>
+                <input type="file" name="diploma_pdf" accept=".pdf" required>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

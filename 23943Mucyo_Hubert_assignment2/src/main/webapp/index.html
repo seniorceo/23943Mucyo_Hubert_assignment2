@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="form login">
+        <header>Register</header>
+        <form action="login" method="post">
+          <input type="text" placeholder="Enter the email" name="email" required />
+          <input type="password" placeholder="Enter the password" name="password" required />
+          <input type="submit" value="Register" />
+        </form>
+      </div>
+
+      <script>
+        const wrapper = document.querySelector(".wrapper");
+        const loginHeader = document.querySelector(".login header");
+
+        loginHeader.addEventListener("click", () => {
+          wrapper.classList.add("active");
+        });
+      </script>
+    </section>
+  </body>
+</html>
